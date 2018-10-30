@@ -1,0 +1,21 @@
+{
+  "name": "contact_form",
+  "version": "1.0.0",
+  "description": "Contact form using node to send email",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flaviamedici/contact_form.git"
+  },
+  "author": "Flavia Medici",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "nodemailer": "^4.6.8"
+  }
+}
