@@ -45,11 +45,11 @@ app.post('/send', (req, res) => {
             // create reusable transporter object using the default SMTP transport
             let transporter = nodemailer.createTransport({
                 host: 'mail.flaviamedici.com',
-                port: 465,
-                secure: true, // true for 465, false for other ports
+                port: 587,
+                secure: false, // true for 465, false for other ports
                 auth: {
                     user: 'me@flaviamedici.com', // generated ethereal user
-                    pass: '' // generated ethereal password
+                    pass: 'Fla013759!' // generated ethereal password
                 },
                 tls:{
                     rejectUnauthorized:false
@@ -59,7 +59,7 @@ app.post('/send', (req, res) => {
             // setup email data with unicode symbols
             let mailOptions = {
                 from: '"Nodemailer Contact" <me@flaviamedici.com>', // sender address
-                to: 'flamedici@gmail.com', // list of receivers
+                to: 'flamedici@hotmail.com', // list of receivers
                 subject: 'Node contact request', // Subject line
                 text: 'Hello world', // plain text body
                 html: output // html body
