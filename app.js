@@ -49,7 +49,7 @@ app.post('/send', (req, res) => {
                 secure: false, // true for 465, false for other ports
                 auth: {
                     user: 'me@flaviamedici.com', // generated ethereal user
-                    pass: 'Fla013759!' // generated ethereal password
+                    pass: '123456789' // generated ethereal password
                 },
                 tls:{
                     rejectUnauthorized:false
